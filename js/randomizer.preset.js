@@ -1043,6 +1043,120 @@ function preset_npc_shuffle_standard() //standard npc shuffle
 	$('#hide_filename_spoiler').prop('checked', false).triggerHandler("click");
 }
 
+function preset_aaron2u2_special() // aaron2u2's testbed
+{
+	$('#randomize_locations_advanced').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_overworld').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_townsvirtue').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_townsnonvirtue').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_britannia').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_empathabbey').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_lycaeum').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_serpentshold').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_stonegate').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_sutekscastle').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_dialog').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_treasuremap').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_caves').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_antmound').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_sewers').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_cyclopscave').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_piratecave').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_caves_spidercave').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_swampcave').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_tombs').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_dungeons').prop('checked', true).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_deceit').prop('checked', false).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_despise'), true).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_destard').prop('checked', false).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_hythloth'), true).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_shame').prop('checked', false).triggerHandler("click");
+	$('#label_randomize_locations_dungeons_wrongcovetous'), true).triggerHandler("click");
+	$('#randomize_locations_shrines').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_gargoylecity').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_joinablepartymembers').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_behlem').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_blaine').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_dupre').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_gorn').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_gwenno').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_iolo').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_jaana').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_julia').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_katrina').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_leodon').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_leonna').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_seggal').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_sentri').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_joinable_shamino').prop('checked', false).triggerHandler("click");
+
+	$('#randomize_moonorb').prop('checked', false).triggerHandler("click");
+	$('#remove_moonorb').prop('checked', false).triggerHandler("click");
+	$('#randomize_spellbook').prop('checked', false).triggerHandler("click");
+	$('#randomize_unlockanddispel').prop('checked', true).triggerHandler("click");
+	$('#add_sherry_item').prop('checked', false).triggerHandler("click");
+
+	$('#randomize_spellbook').prop('disabled', false).triggerHandler("click");
+	$('#add_sherry_item').prop('disabled', false).triggerHandler("click");
+
+	$('#randomize_enemy_monsters').prop('checked', true).triggerHandler("click");
+	$('#randomize_enemy_wild').prop('checked', true).triggerHandler("click");
+	$('#randomize_enemy_animals').prop('checked', true).triggerHandler("click");
+	$('#randomize_enemy_people').prop('checked', false).triggerHandler("click");
+	$('#randomize_enemy_mix').prop('disabled', false).triggerHandler("click");
+	$('#randomize_enemy_mix').prop('checked', true).triggerHandler("click");
+
+	$('#select-ai-spawn-numbers').prop('value', 1).triggerHandler("click");
+	$('#select-ai-aggression').prop('value', 2).triggerHandler("click");
+
+	$('#enemy_stats_shuffle').prop('checked', false).triggerHandler("click");
+	$('#enemy_spellcasters_shuffle').prop('checked', true).triggerHandler("click");
+	$('#enemy_equipmentusers_shuffle').prop('checked', true).triggerHandler("click");
+	$('#enemy_droppossessors_shuffle').prop('checked', true).triggerHandler("click");
+	$('#randomize_enemy_drops').prop('checked', true).triggerHandler("click");
+	$('#maintain_believable_ai').prop('checked', false).triggerHandler("click");
+	$('#add_missing_enemies').prop('checked', true).triggerHandler("click");
+
+	$('#select-ai-stat-difficulty').prop('value', 2).triggerHandler("click");
+	$('#select-ai-health-difficulty').prop('value', 2).triggerHandler("click");
+	$('#select-ai-damage-difficulty').prop('value', 2).triggerHandler("click");
+	$('#select-ai-spell-difficulty').prop('value', 0).triggerHandler("click");
+	$('#select-ai-spells').prop('value', 2).triggerHandler("click");
+	$('#select-ai-equipment').prop('value', 2).triggerHandler("click");
+
+	$('#select-npc-randomization').prop('value', 0).triggerHandler("click");
+	$('#select-starting-party').prop('value', 0).triggerHandler("click");
+	$('#select-starting-inventory').prop('value', 2).triggerHandler("click");
+	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
+	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
+	$('select-playerclass-randomization').prop('value', 0).triggerHandler("click");
+
+	$('#enable_expanded_armor_items').prop('checked', false).triggerHandler("click");
+	$('#select-junk-items').prop('value', 1).triggerHandler("click");
+	$('#select-item-difficulty').prop('value', 0).triggerHandler("click");
+	$('#select-spell-level').prop('value', 1).triggerHandler("click");
+	$('#randomize_player_start').prop('checked', true).triggerHandler("click");
+	$('#randomize_moonorb_destinations').prop('checked', false).triggerHandler("click");
+	$('#randomize_moon_phases').prop('checked', true).triggerHandler("click");
+	$('#open_avatar_shrine').prop('checked', true).triggerHandler("click");
+	$('#skip_intro_cinematic').prop('checked', true).triggerHandler("click");
+	$('#simplify_npc_schedules').prop('checked', false).triggerHandler("click");
+	$('#enable_add_potion_shop').prop('checked', true).triggerHandler("click");
+	$('#expanded_camping').prop('checked', true).triggerHandler("click");
+	$('#enable_fast_button_mapping').prop('checked', true).triggerHandler("click");
+
+	$('#select-day-night-cycle').prop('value', 2).triggerHandler("click");
+	$('#select-karma-difficulty').prop('value', 1).triggerHandler("click");
+	$('#select-spiritshrine').prop('value', 1).triggerHandler("click");
+	$('#select-placedrafts').prop('value', 1).triggerHandler("click");
+
+	$('#display_spoiler_log').prop('checked', true).triggerHandler("click");
+	$('#display_hints').prop('disabled', true).triggerHandler("click");
+	$('#display_hints').prop('checked', false).triggerHandler("click");
+	$('#hide_filename_spoiler').prop('checked', false).triggerHandler("click");
+}
+
 //--------- DAILY CHALLENGE PRESET
 function preset_daily_challenge()
 {
