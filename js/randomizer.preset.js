@@ -1249,7 +1249,7 @@ var PRESET_NAMES =
 	"name": "NPC Shuffle-Standard",
 	"function": preset_npc_shuffle_standard
 	}
-	22: {
+	16: {
 		"name": "The aaron2u2 Special",
 		"function": preset_aaron2u2_special
 	}
