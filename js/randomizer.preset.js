@@ -1147,7 +1147,7 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#select-ai-equipment').prop('value', 2).triggerHandler("click");
 
 	$('#select-npc-randomization').prop('value', 0).triggerHandler("click");
-	$('#select-starting-party').prop('value', 0).triggerHandler("click");
+	$('#select-starting-party').prop('value', 3).triggerHandler("click");
 	$('#select-starting-inventory').prop('value', 2).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
