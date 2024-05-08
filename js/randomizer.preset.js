@@ -1151,10 +1151,10 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#select-starting-inventory').prop('value', 2).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
-	$('select-playerclass-randomization').prop('value', 0).triggerHandler("click");
+	$('select-playerclass-randomization').prop('value', 1).triggerHandler("click");
 
 	$('#enable_expanded_armor_items').prop('checked', false).triggerHandler("click");
-	$('#select-junk-items').prop('value', 1).triggerHandler("click");
+	$('#select-junk-items').prop('value', 2).triggerHandler("click");
 	$('#select-item-difficulty').prop('value', 0).triggerHandler("click");
 	$('#select-spell-level').prop('value', 1).triggerHandler("click");
 	$('#randomize_player_start').prop('checked', true).triggerHandler("click");
@@ -1173,8 +1173,8 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#select-placedrafts').prop('value', 1).triggerHandler("click");
 
 	$('#display_spoiler_log').prop('checked', true).triggerHandler("click");
-	$('#display_hints').prop('disabled', true).triggerHandler("click");
-	$('#display_hints').prop('checked', false).triggerHandler("click");
+	$('#display_hints').prop('disabled', false).triggerHandler("click");
+	$('#display_hints').prop('checked', true).triggerHandler("click");
 	$('#hide_filename_spoiler').prop('checked', false).triggerHandler("click");
 }
 
