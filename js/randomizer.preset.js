@@ -1151,7 +1151,7 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#select-starting-inventory').prop('value', 2).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
-	$('select-playerclass-randomization').prop('value', 1).triggerHandler("click");
+	$('#select-playerclass-randomization').prop('value', 1).triggerHandler("click");
 
 	$('#enable_expanded_armor_items').prop('checked', false).triggerHandler("click");
 	$('#select-junk-items').prop('value', 2).triggerHandler("click");
