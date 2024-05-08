@@ -1067,12 +1067,12 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#randomize_locations_caves_swampcave').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_tombs').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_dungeons').prop('checked', true).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_deceit').prop('checked', false).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_despise'), true).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_destard').prop('checked', false).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_hythloth'), true).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_shame').prop('checked', false).triggerHandler("click");
-	$('#label_randomize_locations_dungeons_wrongcovetous'), true).triggerHandler("click");
+	$('#randomize_locations_dungeons_deceit').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_dungeons_despise'), true).triggerHandler("click");
+	$('#randomize_locations_dungeons_destard').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_dungeons_hythloth'), true).triggerHandler("click");
+	$('#randomize_locations_dungeons_shame').prop('checked', false).triggerHandler("click");
+	$('#randomize_locations_dungeons_wrongcovetous'), true).triggerHandler("click");
 	$('#randomize_locations_shrines').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_gargoylecity').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_joinablepartymembers').prop('checked', false).triggerHandler("click");
@@ -1248,6 +1248,10 @@ var PRESET_NAMES =
 	15: {
 	"name": "NPC Shuffle-Standard",
 	"function": preset_npc_shuffle_standard
+	}
+	22: {
+		"name": "The aaron2u2 Special",
+		"function": preset_aaron2u2_special
 	}
 };
 
