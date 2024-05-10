@@ -1064,7 +1064,7 @@ function preset_patched_base_game()
 
 //--------- OTHER
 
-function preset_aaron2u2_special() // aaron2u2's testbed
+function preset_aaron2u2_special() // Standard race flags
 {
 	$('#randomize_locations_advanced').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_overworld').prop('checked', true).triggerHandler("click");
@@ -1072,19 +1072,19 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#randomize_locations_townsnonvirtue').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_castles').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_castles_britannia').prop('checked', true).triggerHandler("click");
-	$('#randomize_locations_castles_empathabbey').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_empathabbey').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_castles_lycaeum').prop('checked', true).triggerHandler("click");
-	$('#randomize_locations_castles_serpentshold').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_castles_serpentshold').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_castles_stonegate').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_castles_sutekscastle').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_dialog').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_treasuremap').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_caves').prop('checked', true).triggerHandler("click");
-	$('#randomize_locations_caves_antmound').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_antmound').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_caves_sewers').prop('checked', true).triggerHandler("click");
-	$('#randomize_locations_caves_cyclopscave').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_cyclopscave').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_caves_piratecave').prop('checked', false).triggerHandler("click");
-	$('#randomize_locations_caves_spidercave').prop('checked', true).triggerHandler("click");
+	$('#randomize_locations_caves_spidercave').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_caves_swampcave').prop('checked', false).triggerHandler("click");
 	$('#randomize_locations_tombs').prop('checked', true).triggerHandler("click");
 	$('#randomize_locations_dungeons').prop('checked', true).triggerHandler("click");
@@ -1139,17 +1139,16 @@ function preset_aaron2u2_special() // aaron2u2's testbed
 	$('#maintain_believable_ai').prop('checked', false).triggerHandler("click");
 	$('#add_missing_enemies').prop('checked', true).triggerHandler("click");
 
-	$('#select-ai-stat-difficulty').prop('value', 2).triggerHandler("click");
+	$('#select-ai-stat-difficulty').prop('value', 0).triggerHandler("click");
 	$('#select-ai-health-difficulty').prop('value', 2).triggerHandler("click");
-	$('#select-ai-damage-difficulty').prop('value', 2).triggerHandler("click");
+	$('#select-ai-damage-difficulty').prop('value', 0).triggerHandler("click");
 	$('#select-ai-spell-difficulty').prop('value', 0).triggerHandler("click");
 	$('#select-ai-spells').prop('value', 2).triggerHandler("click");
 	$('#select-ai-equipment').prop('value', 2).triggerHandler("click");
 
 	$('#select-npc-randomization').prop('value', 0).triggerHandler("click");
 	$('#select-starting-party').prop('value', 3).triggerHandler("click");
-	$('#select-starting-inventory').prop('value', 2).triggerHandler("click");
-	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
+	$('#select-starting-inventory').prop('value', 1).triggerHandler("click");
 	$('#select-starting-gold').prop('value', 4).triggerHandler("click");
 	$('#select-playerclass-randomization').prop('value', 1).triggerHandler("click");
 

@@ -97,7 +97,7 @@
 				<div class="col-md-6">
 					<div class="input-group" id="gen-group-container">
 						<input type="text" class="form-control mono"
-							placeholder="(Optional) Custom Seed" id="custom-seed">
+							   placeholder="(Optional) Custom Seed" id="custom-seed">
 						<span class="input-group-btn" id="gen-btn-container">
 							<button id="generate-randomized-rom" class="btn btn-default btn-full-width" type="button" disabled>
 								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
@@ -108,7 +108,25 @@
 
 					<div class="form-group top-spaced">
 						<input type="text" class="form-control mono"
-							placeholder="No rom currently generated" id="setgoal-text">
+							   placeholder="No rom currently generated" id="setgoal-text">
+					</div>
+				</div>
+
+				<div class="col-md-12">
+					<div class="input-group" id="flag-string-container">
+						<input type="text" class="form-control mono"
+							   placeholder="(Optional) Custom Flag String" id="custom-flags">
+						<span class="input-group-btn" id="gen-btn-container">
+							<button id="update-selected-flags" class="btn btn-default btn-full-width" type="button" disabled>
+								<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+								Update Selected Flags
+							</button>
+						</span>
+					</div>
+
+					<div class="form-group top-spaced">
+						<input type="text" class="form-control mono"
+							   placeholder="No rom currently generated" id="setgoal-text">
 					</div>
 				</div>
 
@@ -1179,8 +1197,8 @@
 
 						<h4>Screen Flash Adjustments</h4>
 						<select class="form-control" id="poison_flash_options">
-							<option value="0" selected="selected">Default Flash <small><i>(Unchanged from base game)</small></i></option>
-							<option value="1">Reduced Flash <small><i>(Reduce the poison/lava/fire flash effect)</small></i></option>
+							<option value="0">Original Flash <small><i>(Unchanged from base game)</small></i></option>
+							<option value="1" selected="selected">Reduced Flash <small><i>(Reduce the poison/lava/fire flash effect)</small></i></option>
 							<option value="2">Remove Flash <small><i>(Remove the poison/lava/fire flash effect)</small></i></option>
 						</select>
 
