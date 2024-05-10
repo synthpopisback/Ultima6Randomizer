@@ -31,6 +31,7 @@ function updatePreset(val)
 
 	updateAllSelectionTooltips();
 	updateSelectedLocationsCount();
+	updateFlagsString();
 }
 
 //--------- OVERWORLD LOCATIONS PRESETS
@@ -54,7 +55,7 @@ function preset_overworld_easy() //easy
 	$('#randomize_spellbook').prop('checked', false).triggerHandler("click");
 	$('#randomize_unlockanddispel').prop('checked', false).triggerHandler("click");
 	$('#add_sherry_item').prop('checked', true).triggerHandler("click");
-	
+
 	$('#randomize_moonorb').prop('disabled', false).triggerHandler("click");
 	$('#randomize_spellbook').prop('disabled', false).triggerHandler("click");
 	$('#randomize_unlockanddispel').prop('disabled', false).triggerHandler("click");
@@ -1179,10 +1180,17 @@ function preset_aaron2u2_special() // Standard race flags
 
 $('#preset').change(updatePreset);
 
-// selecting any option by hand should set the preset box to "custom"
+// selecting any checkbox option by hand should set the preset box to "custom"
 $('.presetoption').click(function()
 {
 	$('#preset').val(0);
+	updateFlagsString();
+});
+
+// changing any select option by hand should at least update the flag string
+$('.presetselect').change(function () {
+	$('#preset').val(0);
+	updateFlagsString();
 });
 
 var PRESET_NAMES =

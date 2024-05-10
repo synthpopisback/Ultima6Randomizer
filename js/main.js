@@ -94,6 +94,10 @@ $('#download-last-generated-rom').click(function(e)
 	$('#modal-generated-win').modal('show');
 });
 
+$('#update-selected-flags').click(function (e) {
+	updatePreset();
+});
+
 async function generateRandomizedOnClick()
 {
 	await generateRandomizedShowModal();
@@ -653,6 +657,11 @@ function updateSelectedLocationsCount()
 		$('#label_randomize_locations_header #locations_header_selected_required').text("ALL " + requiredProgressionItems.length);
 		setClassToColor("locations_header_selected_required_color", "rgb(51, 51, 51)");
 	}
+}
+
+function updateFlagsString() {
+	// Always show flag string representing the currently-selected flags
+	$('#custom-flags').val('x' + getRandomizerSettings() + '-' + 's' + getRandomizerSettingsSelects());
 }
 
 $('#randomize_enemy_monsters').click(function(e)

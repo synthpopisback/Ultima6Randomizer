@@ -62,16 +62,33 @@
 		</div>
 		<div class="container">
 			<div class="row">
+
 				<div class="col-md-6">
 					<input type="file" id="original-rom" accept=".sfc,.smc">
 					<button id="select-original-rom" class="btn btn-default btn-full-width">
 						<span class="glyphicon glyphicon-question-sign" aria-hidden="true" id="original-rom-result"></span>
 						Select Original NTSC-U (English) ROM
 					</button>
+				</div>
 
+				<div class="col-md-6">
+					<div class="input-group" id="gen-group-container">
+						<input type="text" class="form-control mono"
+							   placeholder="(Optional) Custom Seed" id="custom-seed">
+						<span class="input-group-btn" id="gen-btn-container">
+							<button id="generate-randomized-rom" class="btn btn-default btn-full-width" type="button" disabled>
+								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
+								Generate ROM
+							</button>
+						</span>
+					</div>
+				</div>
+
+				<div class="col-md-6">
 					<div class="input-group top-spaced">
+						<!--Randomizer Preset -->
 						<div class="input-group-addon">
-							Randomizer Preset</span>
+							<span>Randomizer Preset</span>
 						</div>
 						<select class="form-control" id="preset">
 							<option value="0">&lt;Custom&gt;</option>
@@ -95,29 +112,11 @@
 				</div>
 
 				<div class="col-md-6">
-					<div class="input-group" id="gen-group-container">
+					<div class="input-group top-spaced" id="flag-string-container">
 						<input type="text" class="form-control mono"
-							   placeholder="(Optional) Custom Seed" id="custom-seed">
-						<span class="input-group-btn" id="gen-btn-container">
-							<button id="generate-randomized-rom" class="btn btn-default btn-full-width" type="button" disabled>
-								<span class="glyphicon glyphicon-play" aria-hidden="true"></span>
-								Generate ROM
-							</button>
-						</span>
-					</div>
-
-					<div class="form-group top-spaced">
-						<input type="text" class="form-control mono"
-							   placeholder="No rom currently generated" id="setgoal-text">
-					</div>
-				</div>
-
-				<div class="col-md-12">
-					<div class="input-group" id="flag-string-container">
-						<input type="text" class="form-control mono"
-							   placeholder="(Optional) Custom Flag String" id="custom-flags">
+							   placeholder="(Optional) Custom Flag String" id="custom-flags" readonly>
 						<span class="input-group-btn" id="flag-btn-container">
-							<button id="update-selected-flags" class="btn btn-default btn-full-width" type="button" enabled>
+							<button id="update-selected-flags" class="btn btn-default btn-full-width" type="button" disabled>
 								<span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
 								Update Selected Flags
 							</button>
@@ -125,8 +124,15 @@
 					</div>
 				</div>
 
-				<div class="col-md-12">
-					<div class="input-group" id="download-last-group-container">
+				<div class="col-md-6">
+					<div class="form-group top-spaced">
+						<input type="text" class="form-control mono"
+							   placeholder="No rom currently generated" id="setgoal-text">
+					</div>
+				</div>
+
+				<div class="col-md-6">
+					<div class="input-group top-spaced" id="download-last-group-container">
 						<span class="input-group-btn" id="download-last-btn-container">
 							<button id="download-last-generated-rom" class="btn btn-default btn-full-width" type="button" disabled>
 								<span class="glyphicon glyphicon-download-alt" aria-hidden="true"></span>
