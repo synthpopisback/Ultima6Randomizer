@@ -95,7 +95,7 @@ $('#download-last-generated-rom').click(function(e)
 });
 
 $('#update-selected-flags').click(function (e) {
-	updatePreset();
+	$('#custom-flags').val("testing button function");
 });
 
 async function generateRandomizedOnClick()

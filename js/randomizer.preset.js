@@ -1180,14 +1180,14 @@ function preset_aaron2u2_special() // Standard race flags
 
 $('#preset').change(updatePreset);
 
-// selecting any checkbox option by hand should set the preset box to "custom"
+// selecting any checkbox option by hand should set the preset box to "custom" and update the flag string
 $('.presetoption').click(function()
 {
 	$('#preset').val(0);
 	updateFlagsString();
 });
 
-// changing any select option by hand should at least update the flag string
+// changing any select option by hand should set the preset box to "custom" and update the flag string
 $('.presetselect').change(function () {
 	$('#preset').val(0);
 	updateFlagsString();
